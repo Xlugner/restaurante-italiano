@@ -7,9 +7,8 @@ import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://astropie.netlify.app",
-	base: "/",
-	// trailingSlash: 'always',
+	site: "https://italian-restaurant-98hhcmgxa-xlugners-projects.vercel.app",
+	output: "static",
 	integrations: [
 		alpinejs(),
 		playformInline({
@@ -17,7 +16,6 @@ export default defineConfig({
 		}),
 		mdx(),
 	],
-	output: "static",
 	devToolbar: {
 		enabled: false,
 	},
