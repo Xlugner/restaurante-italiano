@@ -1,0 +1,107 @@
+---
+import Layout from "~/layouts/Layout.astro";
+import Section from "~/components/Section.astro";
+import Hero from "~/components/Hero.astro";
+import { Picture } from "astro:assets";
+import Badge from "~/components/Badge.astro";
+import Button from "~/components/Button.astro";
+import ButtonCallUs from "~/components/ButtonCallUs.astro";
+import Article from "~/components/Article.astro";
+
+// Images
+import PizzaHero from "~/assets/images/pizza-hero.png";
+---
+
+<Layout>
+  <Section class:list={"bg-white"}>
+    <Hero>
+      <div slot="hero-content-left" class="prose max-w-none max-lg:order-1">
+        <Badge title="El restaurante italiano" />
+        <h1 class="font-black">
+          Comida italiana auténtica en un restaurante italiano real...
+        </h1>
+
+        <p>
+          Disfruta el sabor de Italia con nuestros platos auténticos preparados
+          con los mejores ingredientes. Deléitate con nuestra amplia variedad de
+          pizzas, pastas y postres, todos elaborados con amor y tradición. Ya
+          sea que comas en el local o pidas para llevar, te garantizamos una
+          experiencia culinaria memorable.
+        </p>
+
+        <span class="text-brand-green font-medium"
+          >✔ También hacemos entregas a domicilio</span
+        >
+
+        <div class="mt-8 flex items-center gap-x-8">
+          <Button url="/book">Reservar ahora</Button>
+          <ButtonCallUs />
+        </div>
+      </div>
+      <div slot="hero-content-right">
+        <Picture
+          class:list={"mx-auto"}
+          src={PizzaHero}
+          height={600}
+          formats={["avif", "webp"]}
+          alt="A description of my image."
+          loading={"eager"}
+          fetchpriority={"high"}
+        />
+      </div>
+    </Hero>
+  </Section>
+
+  <Section class:list={"bg-white"}>
+    <Article>
+      <h2>Bienvenido a D'Rossi</h2>
+      <p>
+        Ubicado en el corazón de la ciudad, <strong>D'Rossi</strong> ofrece una
+        experiencia gastronómica italiana auténtica como ninguna otra. Desde el momento
+        en que entras, te transportarás a las vibrantes calles de Italia, donde la
+        buena comida y la mejor compañía son el centro de todo.
+      </p>
+
+      <h3>Nuestra Historia</h3>
+      <p>
+        Fundado en <em>1998</em>, nuestro restaurante familiar siempre ha sido
+        un trabajo hecho con amor. Inspirados en recetas transmitidas de
+        generación en generación, traemos la <u>rica herencia culinaria</u> de Italia
+        a tu mesa. Cada plato cuenta una historia y cada comida es una celebración
+        de sabor.
+      </p>
+
+      <h3>Nuestra Filosofía</h3>
+      <blockquote>"El ingrediente secreto siempre es el amor."</blockquote>
+      <p>
+        En D'Rossi creemos en la alegría simple de los ingredientes frescos,
+        las técnicas tradicionales y la pasión por crear comidas memorables.
+        Desde nuestra pasta hecha a mano hasta nuestras pizzas al horno de leña,
+        cada bocado está preparado con dedicación.
+      </p>
+
+      <h4>¿Qué nos hace especiales?</h4>
+      <ul>
+        <li>
+          <strong>Autenticidad:</strong> Recetas tradicionales, como las hacía la
+          abuela.
+        </li>
+        <li>
+          <strong>Ingredientes frescos:</strong> Productos locales y especialidades
+          italianas importadas.
+        </li>
+        <li>
+          <strong>Ambiente acogedor:</strong> Un lugar donde todos se sienten en
+          familia.
+        </li>
+      </ul>
+
+      <h3>Únete a nosotros</h3>
+      <p>
+        Ya sea que celebres una ocasión especial o simplemente quieras disfrutar
+        de la cocina italiana, <strong>D'Rossi</strong> es el destino perfecto.
+        <em>Ven por la comida, quédate por los recuerdos.</em>
+      </p>
+    </Article>
+  </Section>
+</Layout>

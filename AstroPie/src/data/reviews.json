@@ -1,0 +1,27 @@
+[
+	{
+		"id": 1,
+		"author": "Jane Doe",
+	   "review": "¡La comida estuvo increíble! Me encantó el ambiente y el servicio fue excelente."
+	},
+	{
+		"id": 2,
+		"author": "John Smith",
+	   "review": "La mejor comida italiana que he probado. ¡No puedo esperar para volver!"
+	},
+	{
+		"id": 3,
+		"author": "Alice Johnson",
+	   "review": "La pasta estaba perfectamente cocida y la salsa deliciosa. Recomiendo mucho este restaurante."
+	},
+	{
+		"id": 4,
+		"author": "Bob Brown",
+	   "review": "¡La pizza estuvo fantástica! Definitivamente volveré a pedir aquí."
+	},
+	{
+		"id": 5,
+		"author": "Sarah Wilson",
+	   "review": "El tiramisú estuvo espectacular. Soñaré con él durante semanas."
+	}
+]
