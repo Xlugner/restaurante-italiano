@@ -1,70 +1,142 @@
-# AstroPie
+# Restaurante Italiano 🍝
 
-AstroPie is a free theme for the Astro framework, designed to provide a beautiful and functional starting point for your next restaurant or bistro website. Whether you're running an Italian restaurant, a cozy bistro, or any other type of dining establishment, AstroPie has you covered with its clean design and easy-to-use components.
+Un elegante sitio web para un restaurante italiano, construido con tecnologías web modernas para ofrecer una experiencia de usuario excepcional. Basado en el tema AstroPie y personalizado para satisfacer las necesidades específicas de nuestro restaurante.
 
-## 🌟 About AstroPie
+## 🌟 Características Principales
 
-AstroPie is perfect for restaurant owners, developers, and designers who want to quickly set up a stylish and responsive website. It leverages modern web technologies to ensure a smooth and performant user experience.
+- 📱 Diseño totalmente responsivo
+- 🖼️ Galería de imágenes optimizada con efecto lightbox
+- 🍽️ Menú interactivo y fácil de actualizar
+- 🚀 Optimización de rendimiento y carga rápida
+- 🔍 SEO mejorado para mejor visibilidad
+- 🌐 Soporte multiidioma (Español/Inglés)
 
-## 🛠️ Technologies Used
+## 🛠️ Tecnologías Utilizadas
 
--   **Astro**: The core framework for building fast, content-focused websites.
--   **TailwindCSS**: A utility-first CSS framework for rapid UI development.
--   **Alpine.js**: A lightweight JavaScript framework for adding interactivity.
--   **Swiper**: A modern slider library for creating responsive sliders.
--   **GLightbox**: A pure JavaScript lightbox for displaying images and videos.
+- **Astro**: Framework web moderno para sitios estáticos rápidos
+- **TailwindCSS**: Framework CSS utilitario para diseño flexible
+- **Alpine.js**: Framework JavaScript ligero para interactividad
+- **GLightbox**: Lightbox moderno para la galería de imágenes
+- **Vercel**: Plataforma de despliegue con alto rendimiento
 
-## 🚀 Installation and Deployment
+## 🚀 Instalación y Despliegue
 
-To get started with AstroPie, follow these steps:
+Para comenzar con el proyecto, sigue estos pasos:
 
-1. **Clone AstroPie**:
+1. **Clonar el Repositorio**:
 
-    ```sh
-    git clone https://github.com/wpinfusion/AstroPie.git
-    ```
+   ```sh
+   git clone https://github.com/Xlugner/restaurante-italiano.git
+   cd restaurante-italiano
+   ```
 
-2. **Install Dependencies**:
+2. **Instalar Dependencias**:
 
-    ```sh
-    npm install
-    ```
+   ```sh
+   npm install
+   ```
 
-3. **Run Development Server**:
+3. **Iniciar Servidor de Desarrollo**:
 
-    ```sh
-    npm run dev
-    ```
+   ```sh
+   npm run dev
+   ```
 
-4. **Build for Production**:
+4. **Construir para Producción**:
 
-    ```sh
-    npm run build
-    ```
+   ```sh
+   npm run build
+   ```
 
-## 📂 Project Structure
+5. **Desplegar en Vercel**:
 
-Inside of your AstroPie project, you'll see the following folders and files:
+   ```sh
+   vercel --prod
+   ```
+
+## 📂 Estructura del Proyecto
+
+La estructura del proyecto está organizada de la siguiente manera:
 
 ```text
 /
-├── public/
-│   └── favicon.svg
+├── public/               # Archivos estáticos
+│   └── assets/
+│       └── images/      # Imágenes optimizadas
 ├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   ├── pages/
-│   │   ├── index.astro
-│   │   ├── about-us.astro
-│   │   ├── menu.astro
-│   │   ├── gallery.astro
-│   │   ├── contact.astro
-│   │   └── book.astro
-│   └── styles/
-└── package.json
+│   ├── components/      # Componentes reutilizables
+│   ├── layouts/         # Layouts de página
+│   ├── pages/          # Páginas del sitio
+│   ├── styles/         # Estilos CSS
+│   └── data/           # Datos JSON (menú, galería)
+├── astro.config.mjs    # Configuración de Astro
+├── tailwind.config.js  # Configuración de TailwindCSS
+└── vercel.json         # Configuración de Vercel
 ```
+
+## 🎨 Personalización
+
+### Contenido del Menú
+
+Los platos y categorías del menú se pueden modificar en `src/data/menu.json`. Cada plato puede incluir:
+
+- Nombre
+- Descripción
+- Precio
+- Categoría
+- Imagen (opcional)
+- Etiquetas (vegetariano, picante, etc.)
+
+### Galería de Imágenes
+
+Las imágenes de la galería se gestionan en:
+
+- Archivos: `public/assets/images/gallery/`
+- Configuración: `src/data/gallery.json`
+- Formato recomendado: WebP para mejor rendimiento
+
+### Estilos y Temas
+
+- Los estilos base se pueden modificar en `src/styles/`
+- La configuración de TailwindCSS está en `tailwind.config.js`
+- Los colores del tema se pueden ajustar en la configuración de Tailwind
+
+## 🤝 Contribuciones
+
+¡Las contribuciones son bienvenidas! Si deseas mejorar este proyecto:
+
+1. Haz fork del repositorio
+2. Crea una rama para tu característica (`git checkout -b feature/AmazingFeature`)
+3. Haz commit de tus cambios (`git commit -m 'Add: nueva característica'`)
+4. Push a la rama (`git push origin feature/AmazingFeature`)
+5. Abre un Pull Request
+
+## 📝 Licencia
+
+Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
+
+## 💫 Agradecimientos
+
+- Basado en el tema [AstroPie](https://github.com/wpinfusion/AstroPie)
+- Imágenes de [Pexels](https://www.pexels.com/)
+  ├── public/
+  │ └── favicon.svg
+  ├── src/
+  │ ├── assets/
+  │ ├── components/
+  │ ├── layouts/
+  │ │ └── Layout.astro
+  │ ├── pages/
+  │ │ ├── index.astro
+  │ │ ├── about-us.astro
+  │ │ ├── menu.astro
+  │ │ ├── gallery.astro
+  │ │ ├── contact.astro
+  │ │ └── book.astro
+  │ └── styles/
+  └── package.json
+
+````
 
 ## 📄 Premade Pages
 
@@ -105,7 +177,7 @@ A component for displaying articles.
   <h1>Title</h1>
   <p>Content goes here...</p>
 </Article>
-```
+````
 
 ### Badge
 
